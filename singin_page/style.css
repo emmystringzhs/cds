@@ -1,0 +1,265 @@
+/* Resetting default margin and padding for all elements */
+*{
+        padding: 0px;
+        margin: 0px;
+    }
+    
+    /* Setting background image for the body */
+    body{
+        background: url(./background.jpg);
+    }
+    
+    /* Styling for navigation bar */
+    .nav{
+        width: 100%;
+        height: 90px;
+        background: rgba(0, 0, 0, 0.5);
+    }
+    
+    /* Styling for logo */
+    .logo{
+        width: 200px;
+        height: auto;
+        padding: 10px 20px;
+    }
+    
+    /* Styling for navigation list */
+    .nav ul{
+        float: right;
+        padding: 10px 20px;
+    }
+    
+    /* Styling for list items in navigation */
+    .nav ul li{
+        display: inline-block;
+        padding: 10px 20px;
+    }
+    
+    /* Styling for navigation links */
+    .nav ul li a{
+        color: white;
+        font-size: 20px;
+        text-decoration: none;
+        padding: 6px 13px;
+    }
+    .nav ul li .active,
+    .nav ul li:hover{
+        background: red;
+    }
+    
+    /* Styling for main content container */
+    .main{
+        display: flex;
+        background: transparent;
+        height: 100vh;
+        width: 100%;
+    }
+    
+    /* Styling for text content section */
+    .text_content{
+        width: 50%;
+        min-height: 70vh;
+        background: transparent;
+    }
+    
+    /* Styling for write-ups */
+    .write_ups{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 90px;
+        margin-bottom: 50px;
+    }
+    
+    /* Styling for content headings */
+    .content h1, .content h2{
+        color: white;
+        font-size: 30px;
+        font-weight: bold;
+        width: 30vw;
+        text-align: center;
+    }
+    
+    /* Styling for buttons */
+    .content .buttons .btn{
+        margin-left: 25px;
+    }
+
+    .buttons{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .buttons button{
+        height: 50px;
+        width: 250px;
+        font-size: 18px;
+        font-weight: bold;
+        color: #ffb3b3;
+        background: red;
+        border: 1px solid #cc0000;
+        outline: none;
+        cursor: pointer;
+        border-radius: 25px;
+        transition: .5s;
+    }
+    
+    .buttons button:hover{
+        background-color: #cc0000;
+    }
+    
+    /* Styling for form content section */
+    .form_content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        min-height: 70vh;
+        background: transparent;
+    }
+    
+    /* Styling for form box */
+    .box{
+        position: relative;
+        width: 400px;
+        height: 500px;
+        background: red;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+    
+    .box::before{
+        content: '';
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 380px;
+        height: 420px;
+        background: linear-gradient(0deg, transparent, transparent,#45f3ff, #45f3ff, #45f3ff);
+        z-index: 1;
+        transform-origin: bottom right;
+        animation: animate 30s linear infinite;
+    }
+    
+    @keyframes animate {
+        0%{
+            transform: rotate(0deg);
+        }
+        100%{
+            transform: rotate(3600deg);
+        }
+    }
+    
+    .box form{
+        position: absolute;
+        inset: 4px;
+        background: #222;
+        padding: 50px 40px;
+        border-radius: 8px;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .box form h2{
+        color: aliceblue;
+        font-weight: bold;
+        text-align: center;
+        letter-spacing: 0.1em;
+    }
+    
+    .box form .input_box{
+        position: relative;
+        width: 300px;
+        margin-top: 35px;
+    }
+    
+    .box form .input_box input{
+        position: relative;
+        width: 100%;
+        padding: 20px 10px 10px;
+        background: transparent;
+        outline: none;
+        box-shadow: none;
+        color: #23242a;
+        margin-top: 35px;
+        color: white;
+        font-size: 1em;
+        letter-spacing: 0.05s;
+        transition: .5s;
+        z-index: 10;
+    }
+    
+    .box form .input_box span{
+        position: absolute;
+        left: 0;
+        padding: 20px 10px 10px;
+        pointer-events: none;
+        color: #8f8f8f;
+        font-size: 1em;
+        letter-spacing: 0.1em;
+        transition: .5s;
+    }
+    
+    .box form .input_box input:valid ~ span,
+    .box form .input_box input:focus ~ span{
+        color: azure;
+        font-size: .75em;
+        transform: translateY(-34px);
+    }
+    
+    .box form .inputBox i{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 2px;
+        background: #fff;
+        border-radius: 4px;
+        overflow: hidden;
+        transition: .5s;
+        pointer-events: none;
+    }
+    
+    .box form .input_box input:valid ~ i,
+    .box form .input_box input:focus ~ i{
+        height: 44px;
+    }
+    
+    /* Styling for links */
+    .links{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 40px;
+    }
+    
+    .box form .links a{
+        margin: 10px;
+        font-size: .75em;
+        color: #8f8f8f;
+        text-decoration: none;
+    }
+    
+    .box form .links a:hover,
+    .box form .links a:nth-child(2){
+        color: #fff;
+    }
+    
+    /* Styling for form submit button */
+    box form .input_box input[type="submit"]{
+        border: none;
+        outline: none;
+        padding: 9px 25px;
+        background: #fff;
+        cursor: pointer;
+        border-radius: 4px;
+        font-weight: 500;
+        width: 100px;
+        margin-top: 10px;
+    }
+    
+    box form .input_box input[type="submit"]:active{
+        opacity: .8;
+    }
+    
