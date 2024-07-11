@@ -1,23 +1,31 @@
-# 30 Days Code Challenge
+# C~D~S Network Signup Page
 
-Welcome to my 30 Days Code Challenge repository! 🚀
+Welcome to C~D~S Network! Connect, Discover, Share.
 
-## Overview
+**Fields:**
+- Username
+- Email Address
+- Password / Confirm Password
+- First Name / Last Name
+- Date of Birth
+- Gender (optional)
+- Location (optional)
+- Profile Picture (optional)
 
-This repository contains the code for my 30 Days Code Challenge journey, where I've been exploring various aspects of web development and enhancing my coding skills.
+**Sections:**
+- Agree to Terms and Conditions / Privacy Policy
+- Optional newsletter subscription
 
-## Day 3: Elevating User Experience
+**Buttons:**
+- Sign Up
+- Already have an account? Log In
 
-### Description
+**Features:**
+- Responsive design
+- Accessibility support
 
-Day Three of the challenge focused on combining the achievements of Days One and Two into a cohesive project. I revamped the navigation bar and main content section from Day One, integrating them with the streamlined sign-in form developed on Day Two. The goal was to create a seamless and engaging user experience while maintaining a balance between security and simplicity.
+Connect with like-minded individuals and join our vibrant community today!
 
-### Features
-
-- Revamped navigation bar with enhanced design and functionality
-- Engaging main content section with interactive elements
-- Streamlined sign-in form for easy access to the platform
-- Improved user experience with smoother transitions and vibrant colors
 
 ### Technologies Used
 
