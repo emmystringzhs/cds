@@ -38,11 +38,11 @@ To explore the code and run the project locally, follow these steps:
 
 1. Clone the repository to your local machine:
    ```
-   git clone https://github.com/code-d-strings/30_days_code_challenge.git
+   git clone https://github.com/emmystringzhs/cds.git
    ```
 2. Navigate to the project directory:
    ```
-   cd 30_days_code_challenge
+   cd cds
    ```
 3. Open the project in your preferred code editor and start exploring!
 
@@ -52,10 +52,10 @@ Your feedback is invaluable to me as I continue my coding journey. If you have a
 
 ## Stay Connected
 
-Let's stay connected on this coding adventure! You can find me on:
+Let's stay connected on this CDS NETWORK PROJECT! You can find me on:
 
 - LinkedIn @ (https://www.linkedin.com/in/code-d-strings)
-- [GitHub](https://github.com/code-d-strings)
+- [GitHub](https://github.com/emmystringzhs)
 
 Looking forward to sharing more updates with you soon! Happy coding! 🌟
 
